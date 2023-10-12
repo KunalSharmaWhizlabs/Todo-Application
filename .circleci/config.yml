@@ -27,7 +27,7 @@ jobs:
             gcloud auth activate-service-account --key-file=key.json
             gcloud container clusters get-credentials whizlabs-cluster --zone us-central1-a --project $GCLOUD_PROJECT_ID
       - run:
-          name: Deploy to Kubernetes
+          name: Deploy to Kubernetes!
           command: kubectl apply -f Deployment.yaml
   when: << pipeline.parameters.build.result == 'success' >>
 workflows:
