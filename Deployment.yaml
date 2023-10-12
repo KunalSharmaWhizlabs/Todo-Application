@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: todo-app
-          image: learnwithwhizlabs/todo_app:latest # Image that will be used to containers in the cluster
+          image: learnwithwhizlabs/todo_app:v1 # Image that will be used to containers in the cluster
           imagePullPolicy: Always
           ports:
             - containerPort: 8080 # The port that the container is running on in the cluster
